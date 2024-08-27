@@ -1,0 +1,8 @@
+__pycache__/
+
+#ide stuff
+.vscode
+.idea
+
+db.sqlite3
+media/
