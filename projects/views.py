@@ -1,7 +1,18 @@
 from django.shortcuts import render
 
-def projectlist(request):
-    return render(request, 'projects/projectlist.html')
+from projects.models import Project
+
+def projectlist(request): 
+    
+    projects = Project.objects.all()
+    
+    context= {
+        'title': 'Список проектов',
+        'projects' : projects,
+    }
+
+
+    return render(request, 'projects/projectlist.html', context)
 
 
 def project(request):

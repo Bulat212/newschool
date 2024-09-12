@@ -16,7 +16,6 @@ def map(request):
     context={
         'title': 'Карта проектов',
 
-
     }
     return render(request, 'main/map.html', context)
 
@@ -30,13 +29,21 @@ def profile(request):
     return render(request, 'main/profile.html', context)
 
 
-def tribes(request):
+def projects(request):
     context={
-        'title': 'Трайбы',
-        'content': 'Информация о трайбах',
+        'title': 'Проекты',
+        'content': 'Все проекты',
 
     }
-    return render(request, 'main/tribes.html', context)
+    return render(request, 'main/profile.html', context)
+
+
+# def tribes(request):
+#     context={
+#         'title': 'Трайбы',
+#         'content': 'Информация о трайбах',
+#     }
+#     return render(request, 'main/tribes.html', context)
 
 
 def about(request):
