@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>profile</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+</body>
+<header>
+	<div class="container">
+		<div class="row header-row">
+			<div class=" col-lg-2 logo">
+				<a href="/index.html">LOGO</a>
+			</div>
+			<nav class="col-lg-7 nav">
+				<ul>
+					<li class="active"><a href="#">Профиль</a> </li>
+					<li><a href="#">Все проекты</a> </li>
+					<li><a href="#">Карта</a> </li>
+				</ul>
+			</nav>
+			<div class="col-lg-3">
+				<input class="form-control" type="text" placeholder="Поиск">
+			</div>
+		</div>
+	</div>
+</header>
+<main>
+	<section id="profile">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 d-flex align-items-stretch">
+					<div class="profile__block ">
+						<div class="profile__block__section">
+							<div class="profile__logo">
+								<div class="profile__logo_img">
+									<img src="img/free-icon-user-1077063.png" alt="">
+								</div>
+								<div class="profile__logo__says">I use Arch, btw!</div>
+							</div>
+
+
+						</div>
+						<div class="profile__block__section d-flex justify-content-between align-items-center">
+							<h5>Majorswe</h5>
+							<div class="profile__status online">
+								online
+							</div>
+						</div>
+						<div class="profile__block__section">
+							<div class="profile__level__text  d-flex justify-content-between">
+								<span>Уровень 0</span>
+								<span>70%</span>
+							</div>
+							<div class="profile__level__progressbar">
+								<div class="progress-container">
+									<div class="progress-bar" style="width: 70%;"></div>
+								</div>
+							</div>
+						</div>
+						<div class="profile__block__section  d-flex justify-content-between align-items-center">
+							<h5>Очки</h5>
+							<div class="profile__element profile__element__exp">
+								<span class="profile__element__num ">300</span>
+								<span>exp</span>
+							</div>
+							<div class="profile__element profile__element__rpr">
+								<span class="profile__element__num">300</span>
+								<span>RPR</span>
+							</div>
+							<div class="profile__element profile__element__gold">
+								<span class="profile__element__num">300</span>
+								<span>gold</span>
+							</div>
+						</div>
+						<div class="profile__block__section">
+							<h5>Отзывы Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit
+								amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing
+								elit.</h5>
+						</div>
+						<div class="profile__block__section text-center connections">
+							<h5><a href="mailto:majorswe@mail.com">majorswe@mail.com</a></h5>
+							<h5><a href="https://github.com/">GitHub</a></h5>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-8 d-flex align-items-stretch">
+					<div class="profile__side">
+						<div class="profile__block  text-center">
+							<div class="row">
+								<div class="col-lg-7 profile__block__left">
+									<h3>Навыки</h3>
+									<div class="profile__skills">
+										<div class="profile__skills__canvas">
+											<canvas  id="skills_diagram"></canvas>
+										</div>
+									</div>
+
+								</div>
+								<div class="col-lg-5">
+									<h3>Проекты</h3>
+									<ul class="profile__projects">
+										<li class="profile__project profile__project-positiv">
+											<a href="#">ПРОЕКТ1</a>
+										</li>
+										<li class="profile__project profile__project-positiv">
+											<a href="#">ПРОЕКТ2</a>
+										</li>
+										<li class="profile__project profile__project-negativ">
+											<a href="#">ПРОЕКТ3</a>
+										</li>
+										<li class="profile__project profile__project-negativ">
+											<a href="#">ПРОЕКТ4</a>
+										</li>
+										<li class="profile__project profile__project-positiv">
+											<a href="#">ПРОЕКТ5</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="profile__block text-center">
+							<h3>опыт</h3>
+							<div class="profile__exp">
+								<div class="profile__exp__canvas">
+									<canvas  id="exp_diagram"></canvas>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+<footer>FOOTER</footer>
+
+
+
+<script src="bootstrap/js/bootstrap.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="js/script.js"></script>
+</body>
+
+</html>
