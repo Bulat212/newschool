@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import sys, subprocess
+
 from projects.models import Project
 
 languages = {
@@ -17,11 +18,19 @@ def projectlist(request):
     return render(request, 'projects/projectlist.html', context)
 
 
-def project(request):
-    return render(request, 'projects/project.html')
+def project(request, project_slug):
+    project = Project.objects.get(slug=project_slug)
+
+    context = {
+        'project': project
+    }
+    
+    return render(request, 'projects/project.html', context=context)
+
 
 def code_editor(request):
     return render(request, 'projects/code_editor.html', {'languages': languages})
+
 
 def runcode(request):
     # codeareadata = ''

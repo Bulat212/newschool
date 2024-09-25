@@ -20,31 +20,6 @@ def map(request):
     return render(request, 'main/map.html', context)
 
 
-def profile(request):
-    context={
-        'title': 'Профиль',
-        'content': 'Информация о студенте',
-
-    }
-    return render(request, 'main/profile.html', context)
-
-
-def projects(request):
-    context={
-        'title': 'Проекты',
-        'content': 'Все проекты',
-
-    }
-    return render(request, 'main/profile.html', context)
-
-
-# def tribes(request):
-#     context={
-#         'title': 'Трайбы',
-#         'content': 'Информация о трайбах',
-#     }
-#     return render(request, 'main/tribes.html', context)
-
 
 def about(request):
     return HttpResponse('about page')

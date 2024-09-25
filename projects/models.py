@@ -19,7 +19,8 @@ class Project(models.Model):
 
     def __str__(self):
         return self.name
-
+    
+        
 
 class СompleteProject(models.Model):
     student = models.IntegerField(verbose_name="Студент")

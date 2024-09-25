@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
     'main',
     'projects',
+    'users',
 ]
 
 MIDDLEWARE = [
@@ -63,7 +64,7 @@ ROOT_URLCONF = 'newschool.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'] ,
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -130,6 +131,9 @@ STATICFILES_DIRS = [
     BASE_DIR / 'static'
 ]
 
+MEDIA_URL = 'media/' #название url префикса, не путь папки
+
+MEDIA_ROOT = BASE_DIR / 'media'
 
 INTERNAL_IPS = [
     # ...

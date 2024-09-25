@@ -26,11 +26,11 @@
 <body>
     <h1>Все проекты</h1>
 
-    {% for proj in projects %}
+    {% for project in projects %}
     
         <div class="product-cell">
-            <div class="product-title"><a href="{% url "projectlist:project" %}">{{proj.name}}</a></div>
-            <div class="product-description">{{proj.description}}</div>
+            <div class="product-title"><a href="{% url "projectlist:project" project.slug %}">{{project.name}}</a></div>
+            <div class="product-description">{{project.description}}</div>
         </div>
     
     {% endfor %}

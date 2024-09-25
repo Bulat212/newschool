@@ -17,16 +17,21 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import include, path
+from django.conf.urls.static import static
 
-from newschool.settings import DEBUG
+from newschool import settings
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls', namespace='main')),
     path('projectlist/', include('projects.urls', namespace='projectlist')),
+    path('user/', include('users.urls', namespace='users')),
+
 ]
 
-if DEBUG:  #если проект находится в режиме разработки то будет тулбар для просмотра запросов
+if settings.DEBUG:  #если проект находится в режиме разработки то будет тулбар для просмотра запросов
     urlpatterns +=[
         path("__debug__/", include("debug_toolbar.urls")), 
     ]
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

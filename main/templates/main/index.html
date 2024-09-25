@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная Страница школы</title>
-</head>
-<body>
-    <h2><a href="{% url "main:map" %}">Карта</a></h2>
-    <h2><a href="{% url "projectlist:index" %}">Проекты</a></h2>
-    {% comment %} <h2><a href="{% url "main:tribes" %}">Трайбы</a></h2> {% endcomment %}
-    
+{% extends "base.html" %}
+{% load static %}
 
-</body>
-</html>
+{% block content %}
+	<main>
+		<section id="homepage">
+			<h1>ГЛАВНАЯ СТРАНИЦА</h1>
+		</section>
+	</main>
+{% endblock %}

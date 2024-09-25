@@ -1,11 +1,102 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>проект н2</title>
-</head>
-<body>
-    <h1>страница выранного проекта</h1>
+{% extends "base.html" %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+{% endblock %}
+
+{% block content %}
+
+<main class="main--dark">
+    <section id="task">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 d-flex align-items-stretch ">
+                    <div class="task__block ">
+                        
+                        <div class="tabs task__tabs">
+                            <div class="tab tab-active" data-tab="theory">Теория</div>
+                            <div class="tab" data-tab="description">Описание задания</div>
+                        </div>
+                        <div class="tabs-content">
+                            <div class="tab-content tab-content-active" data-tab-content="theory">
+                                <h5>Теория:</h5>
+                                <p>
+                                    <strong>Что такое палиндром?</strong><br>
+                                    Палиндром — это слово, фраза, число или последовательность символов, которые читаются одинаково
+                                    слева направо и справа налево. Например, слова "радар", "кот" и фразы "А роза упала на лапу Азора" являются палиндромами.
+                                </p>
+                                <p>
+                                    <strong>Как проверить палиндром?</strong><br>
+                                    Для проверки строки на палиндром можно использовать несколько подходов:
+                                </p>
+                                <ul>
+                                    <li>Удалить все пробелы и привести строку к одному регистру (например, к нижнему).</li>
+                                    <li>Сравнить строку с её обратной версией.</li>
+                                    <li>Или пройтись по строке с двух концов и сравнить символы.</li>
+                                </ul>
+                                <p>
+                                    <strong>Пример проверки:</strong><br>
+                                    Рассмотрим строку "A man a plan a canal Panama". После удаления пробелов и приведения к нижнему регистру она становится "amanaplanacanalpanama", которая является палиндромом.
+                                </p>
+                            </div>
+                            <div class="tab-content" data-tab-content="description">
+                                <h5>Описание задания:</h5>
+                                <p>
+                                    <strong>Задание:</strong> Напишите функцию, которая проверяет, является ли строка палиндромом (читается одинаково слева направо и справа налево).
+                                    <br><br>
+                                    <strong>Описание:</strong> Игнорируйте пробелы и регистр.
+                                    <br><br>
+                                    <strong>Пример:</strong>
+                                </p>
+                                <ul>
+                                    <li><code>is_palindrome("A man a plan a canal Panama")</code> — вернет <strong>true</strong></li>
+                                    <li><code>is_palindrome("Hello World")</code> — вернет <strong>false</strong></li>
+                                </ul>
+                                <p>
+                                    <em>Подсказка:</em> Используйте методы для работы со строками, такие как `toLowerCase()` для приведения к нижнему регистру и `replace()` для удаления пробелов.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 d-flex align-items-stretch">
+                    <div class="task__block ">
+                        <div class="task__block__tools">
+                            <div class="task__block__tools__button">
+                                <a class="button button-primary" href="">Run Code</a>
+                                <a class="button button-primary" href="">Submit</a>
+                            </div>
+                            <div class="form-select" aria-label="Default select example">
+                                <select name="progLang" id="prog-lang">
+                                    <option value="js">JS</option>
+                                    <option value="c++">C++</option>
+                                    <option value="python">PYTHON</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="task__block__editor">
+                            <textarea id="code"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+{% endblock %}
+
+
+{% block scripts %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/clike/clike.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/python/python.min.js"></script>
+{% endblock  %}
+
+
 </body>
+
 </html>
