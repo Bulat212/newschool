@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>profile</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row header-row">
+                <div class=" col-lg-2 logo">
+                    <a href="/index.html">LOGO</a>
+                </div>
+                <nav class="col-lg-7 nav">
+                    <ul class="tabs header__tab">
+                        <li class="tab "><a href="profile.html">Профиль</a> </li>
+                        <li class="tab"><a href="project.html">Проект</a> </li>
+                        <li class="tab tab-active"><a href="projects.html">Все проекты</a> </li>
+                        <li class="tab"><a href="map.html">Карта</a> </li>
+
+                    </ul>
+                </nav>
+                <div class="col-lg-3">
+                    <div id="search-activity" class="search">
+                        <div class="search__input__mask">
+                            <input class="search__input" type="text" placeholder="Поиск">
+                        </div>
+                        <div class="search__icon">
+                            <img class="search__glass" src="img/magnifying-glass.svg" alt="">
+                            <img class="search__cross" src="img/cross.svg" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main--dark">
+        <section id="projects">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-lg-8  tabs  projects__tabs">
+                        <div class="tab tab-active" data-tab="additional">Дополнительные</div>
+                        <div class="tab" data-tab="started">Начатые</div>
+                        <div class="tab" data-tab="finished">Завершенные</div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-3 projects__tabs projects__tabs--sort">
+                        <h6>Сортировка</h6>
+                        <div class="select-ui">
+                            <div class="selected">Время</div>
+                            <div class="options">
+                                <div class="option option-info">Вид сортировки</div>
+                                <div class="option" data-value="js">Время</div>
+                                <div class="option" data-value="c++">Уровень</div>
+                                <div class="option" data-value="python">Доступное</div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-12 tabs-content">
+                        <div data-tab-content="additional" class="row tab-content tab-content-active">
+                            <div class="col-lg-4">
+                                <div class="projects__project">
+                                    <a href="#"></a> <!-- Сюда прописывать ссылку -->
+                                    <span class="projects__project__level-access">1</span>
+                                    <span class="projects__project__time"><img src="img/clock.svg" alt=""> 14Д</span>
+                                    <h5>Проверка палиндрома</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая проверяет, является ли строка палиндромом (читается одинаково слева направо и справа налево).</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 50 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 75</div>
+                                    </div>
+                                    <div class="projects__project__lock"><img src="img/lock.svg" alt=""> <span>НУЖЕН УРОВЕНЬ</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <div class="projects__project">
+                                    <a href="#"></a>
+                                    <span class="projects__project__level-access">2</span>
+                                    <span class="projects__project__time"><img src="img/clock.svg" alt=""> 2Д</span>
+                                    <h5>Сортировка массива</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая сортирует массив чисел по возрастанию.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 70 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 100</div>
+                                    </div>
+                                    <div class="projects__project__lock"><img src="img/lock.svg" alt=""> <span>НУЖЕН УРОВЕНЬ</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <div class="projects__project">
+                                    <a href="#"></a>
+                                    <span class="projects__project__level-access">3</span>
+                                    <span class="projects__project__time"><img src="img/clock.svg" alt=""> 1Д</span>
+                                    <h5>Поиск максимального числа</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая находит максимальное число в массиве.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 60 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 90</div>
+                                    </div>
+                                    <div class="projects__project__lock"><img src="img/lock.svg" alt=""> <span>НУЖЕН УРОВЕНЬ</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <div class="projects__project">
+                                    <a href="#"></a>
+                                    <span class="projects__project__level-access">2</span>
+                                    <span class="projects__project__time"><img src="img/clock.svg" alt=""> 3Д</span>
+                                    <h5>Факториал числа</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая вычисляет факториал заданного числа.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 80 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 120</div>
+                                    </div>
+                                    <div class="projects__project__lock"><img src="img/lock.svg" alt=""> <span>НУЖЕН УРОВЕНЬ</span></div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4">
+                                <div class="projects__project">
+                                    <a href="#"></a>
+                                    <span class="projects__project__level-access">1</span>
+                                    <span class="projects__project__time"><img src="img/clock.svg" alt=""> 1Д</span>
+                                    <h5>Обратный порядок строки</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая возвращает строку в обратном порядке.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 50 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 75</div>
+                                    </div>
+                                    <div class="projects__project__lock"><img src="img/lock.svg" alt=""> <span>НУЖЕН УРОВЕНЬ</span></div>
+                                </div>
+                            </div>
+                        
+                            <div class="col-lg-4">
+                                <div class="projects__project projects__project--lock">
+                                    <a href="#"></a>
+                                    <span class="projects__project__level-access ">6</span>
+                                    <span class="projects__project__time"><img src="img/clock.svg" alt=""> 2Д</span>
+                                    <h5>Проверка на четность числа</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая проверяет, является ли число четным.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 70 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 100</div>
+                                    </div>
+                                    <div class="projects__project__lock"><img src="img/lock.svg" alt=""> <span>НУЖЕН УРОВЕНЬ</span></div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                        
+                        <div data-tab-content="started" class="row tab-content">
+                            <div class="col-lg-4">
+                                <a href="#" class="projects__project">
+                                    <span class="projects__project__level-access">1</span>
+                                    <span class="projects__project__time"><img src="img/clock.svg" alt=""> 1Д</span>
+                                    <h5>Проверка на анаграмму</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая
+                                        проверяет, являются ли две строки анаграммами (содержат одни и те же буквы в
+                                        разном порядке).</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 50 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 75
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div data-tab-content="finished" class="row tab-content">
+                            <div class="col-lg-4">
+                                <a href="#" class="projects__project">
+                                    <span class="projects__project__level-access">1</span>
+                                    <span class="projects__project__stars "><img src="img/star.svg" alt=""> 5</span>
+                                    <h5>Проверка числа на простоту</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая
+                                        проверяет, является ли число простым (делится только на 1 и на само себя).</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 50 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 75
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <a href="#" class="projects__project">
+                                    <span class="projects__project__level-access">2</span>
+                                    <span class="projects__project__stars projects__project__stars--1"><img
+                                            src="img/star.svg" alt=""> 20</span>
+                                    <h5>Объединение двух массивов</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая
+                                        объединяет два массива в один, исключая дубликаты.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 70 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 100
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <a href="#" class="projects__project">
+                                    <span class="projects__project__level-access">3</span>
+                                    <span class="projects__project__stars projects__project__stars--2"><img
+                                            src="img/star.svg" alt=""> 300</span>
+                                    <h5>Фибоначчи до N</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая выводит
+                                        последовательность Фибоначчи до N.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 60 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 90
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="projects__project">
+                                    <span class="projects__project__level-access">3</span>
+                                    <span class="projects__project__stars projects__project__stars--3"><img
+                                            src="img/star.svg" alt=""> 1.5к</span>
+                                    <h5>Фибоначчи до N</h5>
+                                    <p class="projects__project__description">Задание: Напишите функцию, которая выводит
+                                        последовательность Фибоначчи до N.</p>
+                                    <div class="projects__project__res">
+                                        <div class="projects__project__exp"><span class="exp-img">EXP</span> 60 </div>
+                                        <div class="projects__project__money"><img src="img/money.png" alt="money"> 90
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+    </main>
+    <footer>FOOTER</footer>
+
+
+
+    <script src="bootstrap/js/bootstrap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/UI/SelectUI.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
